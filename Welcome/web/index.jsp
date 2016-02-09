@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="style/styles.css" type="text/css"/>
     </head>
     <body>
-        <h1> Welcome to this page, please sign in. </h1>
+        <h1> Welcome to this paaage, please sign in. </h1>
         <form action="WelcomeServlet" method="get">
             
             <input type="hidden" name="action" value="checkUser">  
