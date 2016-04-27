@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>PersonServlet</servlet-name>
+        <servlet-class>com.javaee.conferencewizard.db.PersonServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PresentationSevlet</servlet-name>
+        <servlet-class>com.javaee.conferencewizard.db.NewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PresentationServlet</servlet-name>
+        <servlet-class>com.javaee.conferencewizard.db.PresentationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RoomServlet</servlet-name>
+        <servlet-class>com.javaee.conferencewizard.db.RoomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PersonServlet</servlet-name>
+        <url-pattern>/PersonServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PresentationSevlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PresentationServlet</servlet-name>
+        <url-pattern>/PresentationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RoomServlet</servlet-name>
+        <url-pattern>/RoomServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
